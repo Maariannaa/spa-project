@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.contact {
+  @include flex(column, center, center);
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+
+  &-title {
+    @include flex(unset, center, center);
+    @include font(40px, 600, #fff);
+    margin-top: 66px;
+    margin-bottom: 45px;
+  }
+
+  &-form {
+    @include flex(column, center, unset);
+    width: 409px;
+    height: 362px;
+    padding: 40px 40px 8px 40px;
+    margin-bottom: 38px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+
+    @media(max-width: 500px){
+      width: auto;
+      height: auto;
+    }
+
+    &-title {
+      margin: 20px 60px;
+
+      @media(max-width: 500px){
+        margin: 20px;
+      }
+    }
+
+    &-row {
+      @include flex(row, flex-start, center);
+      margin-bottom: 16px;
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+      }
+    }
+  }
+}

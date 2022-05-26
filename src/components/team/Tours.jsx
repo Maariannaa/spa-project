@@ -56,7 +56,7 @@ export default function Tours(){
       </div>
       <div className={style('contact')}>
         <div>
-          VISITED US
+          VISIT US
         </div>
         <i>
           travals-into-world.com

@@ -5,6 +5,7 @@ import classess from './App.module.scss';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Team from './components/team/Tours';
+import Contact from './components/contact/Contact';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <Home />
       <Team />
+      <Contact />
     </div>
   );
 };
