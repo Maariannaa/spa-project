@@ -1,0 +1,41 @@
+@import '../../index.scss';
+
+.header {
+  @include flex(row, space-between, center);
+  height: 50px;
+  padding: 20px 60px;
+  background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+
+  @media(max-width: 500px){
+    padding: 20px;
+  }
+
+  &-logo {
+    width: 154px;
+    height: 50px;
+
+    @media(max-width: 500px){
+      width: 100px;
+      height: 30px;
+    }
+  }
+
+  &-links {
+    @include flex(row, space-between, center);
+
+    &-link {
+      @include font(16px, 600, $color-text-primary);
+      margin-left: 26px;
+
+      @media(max-width: 500px){
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+      &:active, &:hover {
+        color: $color-text-hover;
+        border-bottom: 3px solid $color-text-hover;
+      }
+    }
+  }
+}
