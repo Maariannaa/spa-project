@@ -1,13 +1,11 @@
-import './App.css';
+import classess from './App.module.scss';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={classess.app}>
+      <header className={classess['app-header']}>
         Single Page Application
       </header>
     </div>
   );
-}
-
-export default App;
+};

@@ -3,7 +3,7 @@ Test project
 ## Technologies used
 
 * ReactJS
-* Node SASS
+* Node SCSS
 
 ## Available Scripts
 
