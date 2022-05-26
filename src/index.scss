@@ -13,7 +13,7 @@ code {
 }
 
 $color-text-primary: #fff;
-$color-text-hover: #f6864b;
+$color-text-hover: #bf5650;
 
 @mixin flex($f-direction, $f-content, $f-items) {
   display: flex;
@@ -34,6 +34,17 @@ $color-text-hover: #f6864b;
   text-align: center;
 }
 
+@mixin bg($b-url) {
+  background-image: url($b-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 a {
   text-decoration: none;
+}
+
+h3 {
+  color: $color-text-hover;
 }
