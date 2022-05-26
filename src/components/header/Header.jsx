@@ -14,8 +14,8 @@ export default function Header(){
       title: 'Home',
     },
     {
-      href: '#tour',
-      title: 'Tour',
+      href: '#tours',
+      title: 'Tours',
     },
     {
       href: '#gallery',

@@ -1,0 +1,76 @@
+@import '../../index.scss';
+
+@mixin image($i-width, $i-height) {
+  margin-bottom: 12px;
+  width: $i-width;
+  height: $i-height;
+}
+
+@mixin lines($l-a-items){
+  width: 237px;
+  align-items: $l-a-items;
+}
+
+.tours {
+  @include flex(column, center, center);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  margin: 20px 0;
+  flex-basis: 100%;
+
+  &-title {
+    @include font(40px, 600, #092a3e);
+    padding-top: 60px;
+  }
+
+  &-gallery {
+    @include flex(row, center, center);
+    margin-top: 76px;
+
+    @media(max-width: 500px){
+      flex-direction: column;
+    }
+
+    &-slide {
+      margin-right: 34px;
+
+      @media(min-width: 500px) and (max-width: 800px){
+        margin: 0 17px;
+      }
+
+      @media(max-width: 500px){
+        margin-right: 0px;
+      }
+
+      &-images {
+        &-director {
+          @include image(316px, 428px);
+
+          @media(max-width: 500px){
+            @include image(280px, 395px);
+          }
+        }
+
+        &-consultant {
+          @include image(394px, 297px);
+
+          @media(max-width: 500px){
+            @include image(284px, 224px);
+          }
+        }
+      }
+    }
+  }
+
+  &-contact {
+    @include flex(column, center, center);
+    @include font(24px, 600, #092a3e);
+    margin-top: 56px;
+    padding-bottom: 116px;
+    width: 100%;
+    height: 200px;
+
+    @media(max-width: 500px){
+      flex-direction: column;
+    }
+  }
+}
